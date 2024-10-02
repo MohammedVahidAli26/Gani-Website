@@ -255,14 +255,19 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+
+.header .container{
+  height: 20px;
+}
+
 .action-btn.user { display: none; }
 
 .header {
   position: absolute;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: transparent;
   padding-block: 20px;
   z-index: 4;
 }
@@ -272,7 +277,9 @@ body {
   box-shadow: var(--shadow-1);
 }
 
+
 .header .container {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -280,7 +287,8 @@ body {
 }
 
 .nav-toggle-btn {
-  margin-bottom: 10%;
+  color: white;
+  margin-bottom: 1%;
   font-size: 50px;
   transition: var(--transition-1);
 }
@@ -326,6 +334,7 @@ body {
 .navbar {
   position: fixed;
   top: 85px;
+  height: 50px;
   left: -320px;
   bottom: 0;
   background-color: var(--white);
@@ -339,14 +348,19 @@ body {
 }
 
 .navbar.active {
+  width: 50%;
+  height: 40%;
+  background-color: white;
   transform: translateX(320px);
   transition-timing-function: var(--cubic-in);
 }
 
 .navbar-link {
-  color: var(--eerie-black);
+  margin-bottom: 10%;
+  font-weight: bold;
+  color: black;
   font-size: var(--fs-6);
-  padding: 10px 15px;
+  padding: 10px 8px;
 }
 
 .navbar-action-btn {
@@ -1363,9 +1377,9 @@ body {
   }
   
   .sectionhero {
-    background-image: url("./assets/images/gani1.webp");
+    background-image: url("./assets/images/h7.jpg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
   }
 
 
